@@ -21,7 +21,14 @@ function uptadeProfileInfo(profileData) {
   email.href = `mailto:${profileData.email}`
 }
 
+function uptadeSoftSkills(profileData){
+  const softSkills = document.getElementById('profile.skills.softSkills')
+  
+  softSkills.innerHTML = profileData.skills.softSkills.map(skills => `<li>${skill}</li>`).join('')
+}
+
 (async () => {
   const profileData = await fetchProfileData();
   uptadeProfileInfo(profileData);
+  uptadeSoftSkills(profileData);
 })();
