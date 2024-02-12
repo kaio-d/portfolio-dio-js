@@ -14,7 +14,7 @@
   justify-content: flex-start;
 }
 
-.portfolio li .title {
+.portfolio li h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,7 +22,7 @@
   font-weight: 700;
 }
 
-.portfolio li .title.github::before {
+.portfolio li h3.github::before {
   content: "";
   display: inline-block;
   width: 1rem;
