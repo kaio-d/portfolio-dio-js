@@ -44,13 +44,18 @@
   ],
   "portfolio": [
     {
-      "name": "Curso Ministrado na DIO para a criação de uma Pokedex",
-      "url": "https://github.com/RenanJPaula/js-developer-pokedex",
+      "name": "Santander Dev Week 2023",
+      "url": "https://github.com/kaio-d/santander-dev-week-2023",
       "github": true
     },
     {
-      "name": "Curso Ministrado na DIO para a criação de uma página de portfolio",
-      "url": "https://github.com/RenanJPaula/js-developer-portfolio",
+      "name": "NLW Notes Expert",
+      "url": "https://github.com/kaio-d/nlw-notes-expert",
+      "github": true
+    },
+    {
+      "name": "PSN Store",
+      "url": "https://github.com/kaio-d/psn-store",
       "github": true
     }
   ],
