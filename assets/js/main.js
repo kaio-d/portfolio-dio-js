@@ -1,4 +1,4 @@
-function uptadeProfileInfo(profileData) {
+function updateProfileInfo(profileData) {
   const photo = document.getElementById("profile.photo");
   photo.src = profileData.photo;
   photo.alt = profileData.name;
@@ -21,14 +21,14 @@ function uptadeProfileInfo(profileData) {
   email.href = `mailto:${profileData.email}`
 }
 
-function uptadeSoftSkills(profileData){
+function updateSoftSkills(profileData) {
   const softSkills = document.getElementById('profile.skills.softSkills')
-  
-  softSkills.innerHTML = profileData.skills.softSkills.map(skills => `<li>${skill}</li>`).join('')
+  softSkills.innerHTML = profileData.skills.softSkills.map(skill => `<li>${skill}</li>`).join('')
 }
+
 
 (async () => {
   const profileData = await fetchProfileData();
-  uptadeProfileInfo(profileData);
-  uptadeSoftSkills(profileData);
+  updateProfileInfo(profileData)
+  updateSoftSkills(profileData)
 })();
